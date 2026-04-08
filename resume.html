@@ -4,103 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brendan Earl - Resume</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #2c3e50;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
             color: white;
-            text-align: center;
-            padding: 20px;
         }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #020617;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .contact {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
         .container {
             max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
+            margin: auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #2c3e50;
-        }
-        h3 {
-            color: #34495e;
-        }
-        p {
-            color: #7f8c8d;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 8px;
-        }
-        .contact-info, .skills, .education, .experience, .projects {
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .muted {
+            color: #94a3b8;
+        }
+
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Brendan Earl</h1>
-        <p>Computer Science Major | Cybersecurity Minor</p>
-    </header>
 
-    <div class="container">
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:brendanmearll@gmail.com">brendanmearll@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/brendan-earl-3591a0251/" target="_blank">linkedin.com/in/brendan-earl-3591a0251</a></p>
-        </section>
-
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: JavaScript, C++, Java, HTML, CSS</li>
-                <li>Tools: Visual Studio, PyCharm, NetBeans, Git</li>
-                <li>Cybersecurity: Network Security, Firewalls, Penetration Testing</li>
-            </ul>
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-            <h3>Slippery Rock University</h3>
-            <p>B.S. in Computer Science, Minor in Cybersecurity (Expected May 2026)</p>
-            <p>GPA: 3.886, Dean's List 6 times</p>
-        </section>
-
-        <section class="experience">
-            <h2>Work Experience</h2>
-            <h3>Security Guard - Slippery Rock Campground</h3>
-            <p>September 2023 – Present</p>
-            <ul>
-                <li>Ensuring safety and security of campground facilities and guests.</li>
-                <li>Monitoring security cameras and patrolling the area as required.</li>
-            </ul>
-            
-            <h3>Fast Food Team Member - Sheetz</h3>
-            <p>June 2022 – August 2023</p>
-            <ul>
-                <li>Provided excellent customer service in a fast-paced environment.</li>
-                <li>Assisted with inventory, cash handling, and food preparation.</li>
-            </ul>
-        </section>
-
-        <section class="projects">
-            <h2>Projects</h2>
-            <h3>Tic-Tac-Toe Game</h3>
-            <p>A simple command-line Tic-Tac-Toe game built in JavaScript.</p>
-            <h3>HTML Event Page</h3>
-            <p>An event page built with HTML and CSS to display event details and registration form.</p>
-            <h3>Mock Payment Site</h3>
-            <p>A mock e-commerce payment page built in HTML to simulate online transactions.</p>
-        </section>
+<header>
+    <h1>Brendan Earl</h1>
+    <div class="contact">
+        📍 Slippery Rock, PA | 📞 724-556-1120 <br>
+        ✉️ <a href="mailto:brendanmearll@gmail.com">brendanmearll@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/brendan-earl-3591a0251" target="_blank">LinkedIn</a>
     </div>
+</header>
+
+<div class="container">
+
+    <!-- Summary -->
+    <div class="card">
+        <h2>Summary</h2>
+        <p class="muted">
+            Computer Science student with a Cybersecurity minor and hands-on experience using C++, JavaScript, OOP, and Linux.
+            Strong academic performance, technical project work, and experience presenting complex concepts.
+            Seeking opportunities in software development or cybersecurity.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <div class="card">
+        <h2>Education</h2>
+        <p><strong>Slippery Rock University</strong></p>
+        <p class="muted">
+            B.S. in Computer Science, Minor in Cybersecurity <br>
+            Expected May 2026 • GPA: 3.9
+        </p>
+        <ul>
+            <li>7x Dean’s List</li>
+            <li>National Honor Society</li>
+            <li>Relevant Coursework: Data Structures, Algorithms, Network Security, Digital Forensics, Software Engineering, Databases</li>
+        </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> JavaScript, HTML/CSS, C++, Java</li>
+            <li><strong>Systems:</strong> Linux (Ubuntu), Windows</li>
+            <li><strong>Tools:</strong> NetBeans, PyCharm, VirtualBox, Visual Studio, Eclipse, MySQL, Git</li>
+            <li><strong>Concepts:</strong> OOP, Data Structures, Networking, Digital Forensics</li>
+        </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="card">
+        <h2>Experience</h2>
+
+        <p><strong>Security Guard — Slippery Rock Campground</strong></p>
+        <p class="muted">May 2023 – Present</p>
+        <ul>
+            <li>Enforce safety policies across campground facilities</li>
+            <li>Communicate with staff, law enforcement, and emergency services</li>
+            <li>Resolve conflicts and handle incidents professionally</li>
+        </ul>
+
+        <p><strong>Team Member — Sheetz</strong></p>
+        <p class="muted">May 2020 – May 2023</p>
+        <ul>
+            <li>Delivered customer service in a fast-paced environment</li>
+            <li>Handled transactions, inventory, and team coordination</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+        <h2>Projects</h2>
+
+        <p><strong>Online Auction Platform (Java, Spring Boot, MySQL)</strong></p>
+        <ul>
+            <li>Developing full-stack auction system with user accounts and bidding features</li>
+            <li>Designed relational database and implemented MVC architecture</li>
+            <li>Added validation, exception handling, and version control</li>
+        </ul>
+
+        <p><strong>Fantasy Football Trade Analyzer (JavaScript)</strong></p>
+        <ul>
+            <li>Built interactive tool for evaluating trades with dynamic scoring</li>
+            <li>Implemented DOM manipulation and event-driven logic</li>
+        </ul>
+
+        <p><strong>Other Projects</strong></p>
+        <ul>
+            <li>Tic-Tac-Toe Game (C++)</li>
+            <li>Responsive Website (HTML/CSS)</li>
+            <li>Mock Payment Interface</li>
+        </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="card">
+        <h2>Certifications</h2>
+        <ul>
+            <li>TEEX Digital Forensics</li>
+            <li>Project Management Foundations</li>
+            <li>Project Management: Risk</li>
+            <li>SQL Injection Training</li>
+        </ul>
+    </div>
+
+</div>
+
 </body>
 </html>
