@@ -24,8 +24,8 @@
         }
 
         .subtitle {
-            font-size: 18px;
             color: #94a3b8;
+            font-size: 18px;
         }
 
         .container {
@@ -73,8 +73,20 @@
             background: #475569;
         }
 
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .muted {
+            color: #94a3b8;
+        }
+
         #steelersBtn {
-            margin-top: 20px;
+            margin-top: 15px;
             padding: 10px 20px;
             background: #facc15;
             color: black;
@@ -104,21 +116,23 @@
 
 <header>
     <h1>Brendan Earl</h1>
-    <p class="subtitle">Backend Developer • Cybersecurity Focus</p>
+    <p class="subtitle">Backend Developer • Cybersecurity Focus • Cloud Enthusiast</p>
 </header>
 
 <div class="container">
 
     <!-- Featured Project -->
     <div class="card">
-        <h2>🔥 Featured Project: Online Auction Platform</h2>
+        <h2>🔥 Online Auction Platform</h2>
+
+        <p class="muted"><strong>Status:</strong> 🚧 In Progress</p>
+
         <p>
             Full-stack auction system built with Java, Spring Boot, and MySQL.
-            Includes user accounts, bidding logic, and backend architecture following MVC principles.
+            Designed to simulate real-world bidding systems with backend architecture and database integration.
         </p>
 
         <div class="buttons">
-            <p><strong>Note:</strong> Demo is in active development. Login functionality is currently limited.</p>
             <a class="primary" href="https://205.149.70.77:8443/OnlineAuction/" target="_blank">
                 Live Demo
             </a>
@@ -126,18 +140,59 @@
                 View Resume
             </a>
         </div>
+
+        <p class="muted">
+            Note: This project is actively under development. Some features (such as authentication) are still being refined.
+        </p>
+
+        <h3>Tech Stack</h3>
+        <ul>
+            <li>Backend: Java, Spring Boot</li>
+            <li>Database: MySQL</li>
+            <li>Architecture: MVC</li>
+            <li>Tools: Git, Maven</li>
+        </ul>
+
+        <h3>How It Works</h3>
+        <p>
+            Users can browse listings and interact with auction items.
+            The backend processes requests through RESTful APIs and updates the database accordingly.
+            Input validation and structured logic help maintain system stability.
+        </p>
+
+        <h3>Security Considerations</h3>
+        <ul>
+            <li>Input validation to prevent invalid or harmful data</li>
+            <li>Structured backend design to maintain system integrity</li>
+        </ul>
     </div>
 
     <!-- About -->
     <div class="card">
         <h2>👨‍💻 About Me</h2>
         <p>
-            I’m a Computer Science student with a focus on backend development and cybersecurity.
-            I enjoy building secure, scalable systems and understanding how real-world applications work under the hood. I enjoy creating applications that connect with my daily life, making this thing far more enjoyable. 
+            I’m a Computer Science student focused on backend development and cybersecurity.
+            I enjoy building secure systems, working with APIs, and understanding how real-world applications function.
+        </p>
+
+        <h3>What I Focus On</h3>
+        <ul>
+            <li>Backend Systems (Java, Spring Boot)</li>
+            <li>Security & Authentication</li>
+            <li>Cloud & Deployment</li>
+        </ul>
+    </div>
+
+    <!-- Optional Mini Project -->
+    <div class="card">
+        <h2>🔐 Secure Authentication API (In Progress)</h2>
+        <p>
+            Building a lightweight authentication system with login functionality and protected routes.
+            Designed to simulate real-world API security patterns.
         </p>
     </div>
 
-    <!-- Fun Section (kept but cleaner) -->
+    <!-- Fun Section -->
     <div class="card">
         <h2>⚡ Bonus</h2>
         <p>Click below for Pittsburgh vibes:</p>
@@ -155,7 +210,7 @@
 </div>
 
 <footer>
-    © 2026 Brendan Earl | Built with HTML & CSS
+    © 2026 Brendan Earl
 </footer>
 
 <script>
